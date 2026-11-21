@@ -1,0 +1,724 @@
+{
+  "host": {
+    "computer": "LAPTOP-E0RPUPKU",
+    "user": "LAPTOP-E0RPUPKU\\Athithya S",
+    "is_admin": false,
+    "os": "Microsoft Windows 11 Home Single Language",
+    "version": "10.0.26300",
+    "build": "26300",
+    "last_boot": "2026-11-11T01:13:20.5000000Z",
+    "audit_time": "2026-11-21T07:48:41.3837696Z"
+  },
+  "local_users": [
+    {
+      "name": "Administrator",
+      "enabled": false,
+      "password_required": true,
+      "password_expires": false,
+      "password_last_set": null,
+      "last_logon": "2025-05-05T22:43:44.7513512Z",
+      "description": "Built-in account for administering the computer/domain"
+    },
+    {
+      "name": "Athithya S",
+      "enabled": true,
+      "password_required": false,
+      "password_expires": false,
+      "password_last_set": "2026-04-11T12:18:59.5183949Z",
+      "last_logon": "2026-11-21T07:11:41.3971792Z",
+      "description": ""
+    },
+    {
+      "name": "CodexSandboxOffline",
+      "enabled": true,
+      "password_required": true,
+      "password_expires": false,
+      "password_last_set": "2026-08-04T16:13:40.3716497Z",
+      "last_logon": "2026-08-23T07:14:19.1394468Z",
+      "description": ""
+    },
+    {
+      "name": "CodexSandboxOnline",
+      "enabled": true,
+      "password_required": true,
+      "password_expires": false,
+      "password_last_set": "2026-08-04T16:13:40.4347016Z",
+      "last_logon": "2026-08-23T07:13:10.7502473Z",
+      "description": ""
+    },
+    {
+      "name": "DefaultAccount",
+      "enabled": false,
+      "password_required": false,
+      "password_expires": false,
+      "password_last_set": null,
+      "last_logon": null,
+      "description": "A user account managed by the system."
+    },
+    {
+      "name": "Guest",
+      "enabled": false,
+      "password_required": false,
+      "password_expires": false,
+      "password_last_set": null,
+      "last_logon": null,
+      "description": "Built-in account for guest access to the computer/domain"
+    },
+    {
+      "name": "WDAGUtilityAccount",
+      "enabled": false,
+      "password_required": true,
+      "password_expires": true,
+      "password_last_set": "2024-05-25T22:15:48.8265805Z",
+      "last_logon": null,
+      "description": "A user account managed and used by the system for Windows Defender Application Guard scenarios."
+    }
+  ],
+  "administrators": [
+    {
+      "name": "LAPTOP-E0RPUPKU\\Administrator",
+      "type": "User",
+      "source": "Local"
+    },
+    {
+      "name": "LAPTOP-E0RPUPKU\\Athithya S",
+      "type": "User",
+      "source": "Local"
+    }
+  ],
+  "listening_ports": [
+    {
+      "address": "::",
+      "port": 49665,
+      "pid": 1504,
+      "process": "wininit"
+    },
+    {
+      "address": "::1",
+      "port": 42050,
+      "pid": 13652,
+      "process": "OneDrive.Sync.Service"
+    },
+    {
+      "address": "172.100.4.243",
+      "port": 58029,
+      "pid": 0,
+      "process": "Idle"
+    },
+    {
+      "address": "172.100.4.243",
+      "port": 57331,
+      "pid": 32448,
+      "process": "claude"
+    },
+    {
+      "address": "0.0.0.0",
+      "port": 49667,
+      "pid": 3288,
+      "process": "svchost"
+    },
+    {
+      "address": "0.0.0.0",
+      "port": 5040,
+      "pid": 3588,
+      "process": "svchost"
+    },
+    {
+      "address": "172.100.4.243",
+      "port": 139,
+      "pid": 4,
+      "process": "System"
+    }
+  ],
+  "connections": [
+    {
+      "local": "172.100.4.243",
+      "local_port": 65314,
+      "remote": "8.8.8.8",
+      "remote_port": 443,
+      "pid": 45840,
+      "process": "chrome"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 65136,
+      "remote": "172.217.70.188",
+      "remote_port": 5228,
+      "pid": 45840,
+      "process": "chrome"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 64680,
+      "remote": "8.8.4.4",
+      "remote_port": 443,
+      "pid": 45840,
+      "process": "chrome"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 64467,
+      "remote": "8.8.8.8",
+      "remote_port": 443,
+      "pid": 36512,
+      "process": "msedgewebview2"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 64072,
+      "remote": "172.64.148.235",
+      "remote_port": 443,
+      "pid": 21016,
+      "process": "ChatGPT"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 63473,
+      "remote": "8.8.4.4",
+      "remote_port": 443,
+      "pid": 7108,
+      "process": "msedgewebview2"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 62882,
+      "remote": "4.213.25.240",
+      "remote_port": 443,
+      "pid": 23416,
+      "process": "OneDrive"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 61518,
+      "remote": "8.8.4.4",
+      "remote_port": 443,
+      "pid": 10776,
+      "process": "msedgewebview2"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 61000,
+      "remote": "4.213.25.240",
+      "remote_port": 443,
+      "pid": 11660,
+      "process": "msedge"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 60214,
+      "remote": "142.251.156.120",
+      "remote_port": 443,
+      "pid": 45840,
+      "process": "chrome"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 60070,
+      "remote": "8.8.8.8",
+      "remote_port": 443,
+      "pid": 37192,
+      "process": "BlueStacksServices"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 60069,
+      "remote": "8.8.4.4",
+      "remote_port": 443,
+      "pid": 31192,
+      "process": "msedgewebview2"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 59947,
+      "remote": "4.213.25.241",
+      "remote_port": 443,
+      "pid": 5744,
+      "process": "svchost"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 59319,
+      "remote": "172.217.117.4",
+      "remote_port": 443,
+      "pid": 444,
+      "process": "GoogleDriveFS"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 58028,
+      "remote": "104.18.32.47",
+      "remote_port": 443,
+      "pid": 43348,
+      "process": "codex"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 58025,
+      "remote": "8.8.4.4",
+      "remote_port": 443,
+      "pid": 21016,
+      "process": "ChatGPT"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 57628,
+      "remote": "160.79.104.10",
+      "remote_port": 443,
+      "pid": 32448,
+      "process": "claude"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 57355,
+      "remote": "172.217.117.4",
+      "remote_port": 443,
+      "pid": 444,
+      "process": "GoogleDriveFS"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 56919,
+      "remote": "8.8.4.4",
+      "remote_port": 443,
+      "pid": 37192,
+      "process": "BlueStacksServices"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 55704,
+      "remote": "192.178.211.84",
+      "remote_port": 443,
+      "pid": 45840,
+      "process": "chrome"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 55447,
+      "remote": "20.195.84.7",
+      "remote_port": 443,
+      "pid": 26300,
+      "process": "CrossDeviceService"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 55082,
+      "remote": "160.79.104.10",
+      "remote_port": 443,
+      "pid": 32448,
+      "process": "claude"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 54818,
+      "remote": "160.79.104.10",
+      "remote_port": 443,
+      "pid": 21092,
+      "process": "claude"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 52618,
+      "remote": "172.64.148.235",
+      "remote_port": 443,
+      "pid": 21016,
+      "process": "ChatGPT"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 52549,
+      "remote": "104.18.37.228",
+      "remote_port": 443,
+      "pid": 21016,
+      "process": "ChatGPT"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 52504,
+      "remote": "160.79.104.10",
+      "remote_port": 443,
+      "pid": 21092,
+      "process": "claude"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 52004,
+      "remote": "160.79.104.10",
+      "remote_port": 443,
+      "pid": 32448,
+      "process": "claude"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 51558,
+      "remote": "8.8.4.4",
+      "remote_port": 443,
+      "pid": 10776,
+      "process": "msedgewebview2"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 51392,
+      "remote": "172.64.148.235",
+      "remote_port": 443,
+      "pid": 21016,
+      "process": "ChatGPT"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 50266,
+      "remote": "160.79.104.10",
+      "remote_port": 443,
+      "pid": 32448,
+      "process": "claude"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 49730,
+      "remote": "4.213.25.241",
+      "remote_port": 443,
+      "pid": 5744,
+      "process": "svchost"
+    },
+    {
+      "local": "172.100.4.243",
+      "local_port": 49153,
+      "remote": "160.79.104.10",
+      "remote_port": 443,
+      "pid": 21092,
+      "process": "claude"
+    }
+  ],
+  "firewall": [
+    {
+      "profile": "Domain",
+      "enabled": true,
+      "inbound_default": "NotConfigured"
+    },
+    {
+      "profile": "Private",
+      "enabled": true,
+      "inbound_default": "NotConfigured"
+    },
+    {
+      "profile": "Public",
+      "enabled": true,
+      "inbound_default": "NotConfigured"
+    }
+  ],
+  "defender": {
+    "antivirus_enabled": true,
+    "realtime_protection": true,
+    "tamper_protection": true,
+    "signature_age_days": 0,
+    "signature_last_updated": "2026-11-20T14:24:48.0000000Z"
+  },
+  "uac": {
+    "enable_lua": 1,
+    "consent_prompt_admin": 5
+  },
+  "rdp": {
+    "enabled": false
+  },
+  "smb1": {
+    "server_smb1": null,
+    "client_driver_present": false
+  },
+  "autoruns": [
+    {
+      "location": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "name": "SecurityHealth",
+      "command": "C:\\Windows\\system32\\SecurityHealthSystray.exe"
+    },
+    {
+      "location": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "name": "OneDrive",
+      "command": "\"C:\\Program Files\\Microsoft OneDrive\\OneDrive.exe\" /background"
+    },
+    {
+      "location": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "name": "GoogleDriveFS",
+      "command": "\"C:\\Program Files\\Google\\Drive File Stream\\134.0.1.0\\GoogleDriveFS.exe\" --startup_mode"
+    },
+    {
+      "location": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "name": "Spotify",
+      "command": "C:\\Users\\Athithya S\\AppData\\Roaming\\Spotify\\Spotify.exe --autostart --minimized"
+    },
+    {
+      "location": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "name": "electron.app.BlueStacks Services",
+      "command": "C:\\Users\\Athithya S\\AppData\\Local\\Programs\\bluestacks-services\\BlueStacksServices.exe --hidden"
+    },
+    {
+      "location": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "name": "Docker Desktop",
+      "command": "C:\\Program Files\\Docker\\Docker\\Docker Desktop.exe"
+    },
+    {
+      "location": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "name": "CometUpdaterTaskUser145.2.7632.4583",
+      "command": "\"C:\\Users\\Athithya S\\AppData\\Local\\Perplexity\\CometUpdater\\145.2.7632.4583\\updater.exe\" --wake"
+    },
+    {
+      "location": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "name": "Figma Agent",
+      "command": "\"C:\\Users\\Athithya S\\AppData\\Local\\FigmaAgent\\figma_agent.exe\""
+    },
+    {
+      "location": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "name": "Wargaming.net Game Center",
+      "command": "\"C:\\ProgramData\\Wargaming.net\\GameCenter\\wgc.exe\" --background"
+    },
+    {
+      "location": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "name": "GoogleChromeAutoLaunch_EBF8A9399967BEA182FA9769FAAD5C56",
+      "command": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --no-startup-window /prefetch:5"
+    },
+    {
+      "location": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "name": "Mozilla-Firefox-308046B0AF4A39CB",
+      "command": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" -os-autostart"
+    },
+    {
+      "location": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "name": "CanvaAutoLaunchAvailabilityCheckAgent",
+      "command": "\"C:\\Users\\Athithya S\\AppData\\Local\\Programs\\Canva\\Canva.exe\" --start-availability-check-agent"
+    },
+    {
+      "location": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "name": "Hangly",
+      "command": "\"C:\\Users\\Athithya S\\AppData\\Local\\Hangly\\current\\Hangly.exe\" --login"
+    },
+    {
+      "location": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "name": "Opera GX Browser Assistant",
+      "command": "\"C:\\Users\\Athithya S\\AppData\\Local\\Programs\\Opera GX\\assistant\\browser_assistant.exe\" --autostart"
+    },
+    {
+      "location": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "name": "Opera Browser Assistant",
+      "command": "\"C:\\Users\\Athithya S\\AppData\\Local\\Programs\\Opera\\assistant\\browser_assistant.exe\" --autostart"
+    },
+    {
+      "location": "HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "name": "MicrosoftEdgeAutoLaunch_9781481119B0B3E26548B7B16DAE91EC",
+      "command": "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --no-startup-window --win-session-start"
+    },
+    {
+      "location": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
+      "name": "msedge_cleanup_{C50565E9-CCCF-44B4-BA15-5AC5C6569197}",
+      "command": "\"C:\\Program Files (x86)\\Microsoft\\Copilot\\Application\\158.0.4370.33\\Installer\\setup.exe\" --mscopilot --channel=stable --delete-old-versions --system-level --verbose-logging --on-logon"
+    },
+    {
+      "location": "HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
+      "name": "msedge_cleanup_{56EB18F8-B008-4CBD-B6D2-8C97FE7E9062}",
+      "command": "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\158.0.4370.33\\Installer\\setup.exe\" --msedge --channel=stable --delete-old-versions --system-level --verbose-logging --on-logon"
+    },
+    {
+      "location": "C:\\Users\\Athithya S\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup",
+      "name": "Comet.lnk",
+      "command": "C:\\Users\\Athithya S\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\Comet.lnk"
+    },
+    {
+      "location": "C:\\Users\\Athithya S\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup",
+      "name": "Ollama.lnk",
+      "command": "C:\\Users\\Athithya S\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\Ollama.lnk"
+    },
+    {
+      "location": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Startup",
+      "name": "McAfee Security Scan Plus.lnk",
+      "command": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\McAfee Security Scan Plus.lnk"
+    }
+  ],
+  "scheduled_tasks": [
+    {
+      "name": "BlueStacksHelper_nxt",
+      "path": "\\",
+      "state": "Ready",
+      "author": null,
+      "command": "C:\\Program Files\\BlueStacks_nxt\\BlueStacksHelper.exe -sr"
+    },
+    {
+      "name": "McUpdaterModuleTask",
+      "path": "\\",
+      "state": "Running",
+      "author": "McAfee, LLC",
+      "command": "C:\\Program Files (x86)\\McAfee Security Scan\\4.2.844\\McUpdaterModule.exe"
+    },
+    {
+      "name": "OneDrive Per-Machine Standalone Update Task",
+      "path": "\\",
+      "state": "Ready",
+      "author": "Microsoft Corporation",
+      "command": "C:\\Program Files\\Microsoft OneDrive\\OneDriveStandaloneUpdater.exe"
+    },
+    {
+      "name": "OneDrive Reporting Task-S-1-5-21-3727248920-1091557874-2201689334-1001",
+      "path": "\\",
+      "state": "Ready",
+      "author": "Microsoft Corporation",
+      "command": "C:\\Program Files\\Microsoft OneDrive\\OneDriveStandaloneUpdater.exe /reporting"
+    },
+    {
+      "name": "OneDrive Startup Task-S-1-5-21-3727248920-1091557874-2201689334-1001",
+      "path": "\\",
+      "state": "Ready",
+      "author": "Microsoft Corporation",
+      "command": "C:\\Program Files\\Microsoft OneDrive\\26.212.1029.0006\\OneDriveLauncher.exe /startInstances"
+    },
+    {
+      "name": "Opera GX scheduled assistant Autoupdate 1765028660",
+      "path": "\\",
+      "state": "Ready",
+      "author": "LAPTOP-E0RPUPKU\\Athithya S",
+      "command": "C:\\Users\\Athithya S\\AppData\\Local\\Programs\\Opera GX\\autoupdate\\opera_autoupdate.exe --scheduledtask --productiscomponent --installdir=\"C:\\Users\\Athithya S\\AppData\\Local\\Programs\\Opera GX\\assistant\" --producttype=assistant $(Arg0)"
+    },
+    {
+      "name": "Opera GX scheduled Autoupdate 1765028660",
+      "path": "\\",
+      "state": "Ready",
+      "author": "LAPTOP-E0RPUPKU\\Athithya S",
+      "command": "C:\\Users\\Athithya S\\AppData\\Local\\Programs\\Opera GX\\autoupdate\\opera_autoupdate.exe --scheduledtask $(Arg0)"
+    },
+    {
+      "name": "Opera scheduled assistant Autoupdate 1759856585",
+      "path": "\\",
+      "state": "Ready",
+      "author": "LAPTOP-E0RPUPKU\\Athithya S",
+      "command": "C:\\Users\\Athithya S\\AppData\\Local\\Programs\\Opera\\autoupdate\\opera_autoupdate.exe --scheduledtask --productiscomponent --installdir=\"C:\\Users\\Athithya S\\AppData\\Local\\Programs\\Opera\\assistant\" --producttype=assistant $(Arg0)"
+    },
+    {
+      "name": "Opera scheduled Autoupdate 1759856585",
+      "path": "\\",
+      "state": "Ready",
+      "author": "LAPTOP-E0RPUPKU\\Athithya S",
+      "command": "C:\\Users\\Athithya S\\AppData\\Local\\Programs\\Opera\\autoupdate\\opera_autoupdate.exe --scheduledtask $(Arg0)"
+    },
+    {
+      "name": "PlatformExperiencesHelper_Daily",
+      "path": "\\",
+      "state": "Ready",
+      "author": null,
+      "command": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\PlatformExperiencesHelper\\platform_experiences_helper.exe"
+    },
+    {
+      "name": "PlatformExperiencesHelper_Metrics",
+      "path": "\\",
+      "state": "Ready",
+      "author": null,
+      "command": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\PlatformExperiencesHelper\\platform_experiences_helper.exe --edge-upload-metrics"
+    },
+    {
+      "name": "PlatformExperiencesHelper_OnUnlock",
+      "path": "\\",
+      "state": "Ready",
+      "author": null,
+      "command": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\PlatformExperiencesHelper\\platform_experiences_helper.exe"
+    },
+    {
+      "name": "RtkAudUService64_BG",
+      "path": "\\",
+      "state": "Running",
+      "author": "Realtek",
+      "command": "\"\"C:\\Windows\\System32\\DriverStore\\FileRepository\\realtekservice.inf_amd64_42717b95c7d228bc\\RtkAudUService64.exe\"\" -background"
+    },
+    {
+      "name": "SecurityScannerScheduler",
+      "path": "\\",
+      "state": "Running",
+      "author": "McAfee, LLC",
+      "command": "C:\\Program Files (x86)\\McAfee Security Scan\\4.2.844\\SSScheduler.exe"
+    },
+    {
+      "name": "ZoomUpdateTaskUser-S-1-5-21-3727248920-1091557874-2201689334-1001",
+      "path": "\\",
+      "state": "Ready",
+      "author": "Zoom Communications, Inc.",
+      "command": "\"C:\\Users\\Athithya S\\AppData\\Roaming\\Zoom\\bin\\Zoom.exe\" --action=UpdateSchedule"
+    },
+    {
+      "name": "RunPlatformExperienceHelperOnUnlock",
+      "path": "\\GoogleUserPEH\\",
+      "state": "Ready",
+      "author": "LAPTOP-E0RPUPKU\\Athithya S",
+      "command": "\"C:\\Program Files\\Google\\Chrome\\Application\\PlatformExperienceHelper\\platform_experience_helper.exe\""
+    },
+    {
+      "name": "RunPlatformExperienceHelper_Daily",
+      "path": "\\GoogleUserPEH\\",
+      "state": "Ready",
+      "author": "LAPTOP-E0RPUPKU\\Athithya S",
+      "command": "\"C:\\Program Files\\Google\\Chrome\\Application\\PlatformExperienceHelper\\platform_experience_helper.exe\""
+    },
+    {
+      "name": "RunPlatformExperienceHelper_Metrics",
+      "path": "\\GoogleUserPEH\\",
+      "state": "Ready",
+      "author": "LAPTOP-E0RPUPKU\\Athithya S",
+      "command": "\"C:\\Program Files\\Google\\Chrome\\Application\\PlatformExperienceHelper\\platform_experience_helper.exe\" --chrome-upload-metrics"
+    },
+    {
+      "name": "McAfee Windows Notification Token",
+      "path": "\\McAfee\\wps\\",
+      "state": "Ready",
+      "author": "McAfee",
+      "command": "\"\\\\?\\C:\\Program Files\\McAfee\\wps\\1.40.161.1\\mc-wns-client\\mc-wns-client.exe\" /mc_wns_task"
+    },
+    {
+      "name": "Firefox Background Update S-1-5-21-3727248920-1091557874-2201689334-1001 308046B0AF4A39CB",
+      "path": "\\Mozilla\\",
+      "state": "Ready",
+      "author": "Mozilla",
+      "command": "C:\\Program Files\\Mozilla Firefox\\firefox.exe --MOZ_LOG sync,prependheader,timestamp,append,maxsize:1,Dump:5 --MOZ_LOG_FILE C:\\ProgramData\\Mozilla-1de4eec8-1241-4177-a864-e594e8d1fb38\\updates\\308046B0AF4A39CB\\backgroundupdate.moz_log --backgroundtask backgroundupdate"
+    },
+    {
+      "name": "Firefox Default Browser Agent 308046B0AF4A39CB",
+      "path": "\\Mozilla\\",
+      "state": "Ready",
+      "author": "Mozilla",
+      "command": "C:\\Program Files\\Mozilla Firefox\\default-browser-agent.exe do-task \"308046B0AF4A39CB\""
+    },
+    {
+      "name": "CometUpdaterTaskUser145.2.7632.4583{9CA155B1-AD12-4CE9-AF2F-10D88722C3A3}",
+      "path": "\\PerplexityUser\\CometUpdater\\",
+      "state": "Ready",
+      "author": "LAPTOP-E0RPUPKU\\Athithya S",
+      "command": "\"C:\\Users\\Athithya S\\AppData\\Local\\Perplexity\\CometUpdater\\145.2.7632.4583\\updater.exe\" --wake"
+    },
+    {
+      "name": "ActionCenterRefreshForExpirationTask-{6bba778d-e64d-41a9-b7c8-ddd88eb0904b}",
+      "path": "\\SoftLanding\\S-1-5-21-3727248920-1091557874-2201689334-1001\\",
+      "state": "Ready",
+      "author": null,
+      "command": ""
+    },
+    {
+      "name": "SoftLandingCreativeManagementTask",
+      "path": "\\SoftLanding\\S-1-5-21-3727248920-1091557874-2201689334-1001\\",
+      "state": "Ready",
+      "author": null,
+      "command": ""
+    },
+    {
+      "name": "SoftLandingDeferralTask-{ff4ee98b-b923-4839-ab33-d4fa3627f33a}",
+      "path": "\\SoftLanding\\S-1-5-21-3727248920-1091557874-2201689334-1001\\",
+      "state": "Ready",
+      "author": null,
+      "command": ""
+    },
+    {
+      "name": "SoftLandingRefreshForExpirationTask-{b315865e-fe0d-41c0-8eec-2bc4cc21ea03}",
+      "path": "\\SoftLanding\\S-1-5-21-3727248920-1091557874-2201689334-1001\\",
+      "state": "Ready",
+      "author": null,
+      "command": ""
+    }
+  ],
+  "hotfixes": {
+    "count": 7,
+    "latest_id": "KB5137006",
+    "latest_installed": "2026-11-19T18:30:00.0000000Z"
+  },
+  "risky_processes": null,
+  "security_log": []
+}

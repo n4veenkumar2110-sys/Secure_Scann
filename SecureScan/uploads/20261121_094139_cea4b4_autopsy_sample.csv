@@ -1,0 +1,5 @@
+"File Name","File Path","File Type","Size","Modified Time","Comment"
+"notes.txt","/home/labuser/Documents/notes.txt","TXT","104","2026-11-20 10:30:00","Deleted file entry recovered from unallocated filesystem space."
+"history","/home/labuser/.config/browser/history","SQLite","45056","2026-11-20 10:32:15","Web browser history artefact containing visited URLs and search queries."
+"backdoor.sh","/tmp/backdoor.sh","Shell Script","512","2026-11-20 10:34:00","Script located in world-writable /tmp directory."
+"id_rsa","/home/labuser/.ssh/id_rsa","Private Key","1675","2026-11-20 10:35:45","OpenSSH private key file stored in user home directory."

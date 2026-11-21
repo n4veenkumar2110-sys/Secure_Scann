@@ -1,0 +1,89 @@
+<!--
+  SecureScan Sysmon Configuration
+  Schema Version: 4.91 (Sysmon v18)
+  
+  Purpose:
+    Monitors process creation (Event 1), network connections (Event 3),
+    file creation in D:\SecureScan\sysmon-test\ (Event 11), and DNS queries (Event 22).
+  
+  IMPORTANT:
+    - This configuration uses SHA256 hashing for all supported events.
+    - Network logging (Event 3) can generate MANY records on busy systems.
+      Start with short collection windows and monitor log volume.
+    - File creation monitoring (Event 11) is scoped to D:\SecureScan\sysmon-test\
+      to avoid flooding the log with unrelated file system activity.
+    - DNS query logging (Event 22) can also be high-volume on active systems.
+  
+  DO NOT APPLY THIS AUTOMATICALLY.
+  See README.md for the exact administrator command.
+-->
+<Sysmon schemaversion="4.91">
+
+  <!-- Use SHA256 hashing for all file and process events -->
+  <HashAlgorithms>SHA256</HashAlgorithms>
+
+  <EventFiltering>
+
+    <!-- =============================================================
+         Event ID 1: Process Create
+         Captures all process creation events (default include).
+         Excludes known noisy system processes to reduce volume.
+         ============================================================= -->
+    <RuleGroup name="SecureScan-ProcessCreate" groupRelation="or">
+      <ProcessCreate onmatch="exclude">
+        <!-- Exclude common noisy background processes -->
+        <Image condition="is">C:\Windows\System32\conhost.exe</Image>
+        <Image condition="is">C:\Windows\System32\backgroundTaskHost.exe</Image>
+        <Image condition="is">C:\Windows\System32\RuntimeBroker.exe</Image>
+        <Image condition="is">C:\Windows\System32\SearchProtocolHost.exe</Image>
+        <Image condition="is">C:\Windows\System32\SearchFilterHost.exe</Image>
+        <Image condition="is">C:\Windows\System32\audiodg.exe</Image>
+      </ProcessCreate>
+    </RuleGroup>
+
+    <!-- =============================================================
+         Event ID 3: Network Connect
+         WARNING: This can generate a large number of records on
+         systems with active network usage. Start with a short
+         collection window (e.g., -Hours 1) and check volume.
+         Excludes browser and Windows Update traffic by default.
+         ============================================================= -->
+    <RuleGroup name="SecureScan-NetworkConnect" groupRelation="or">
+      <NetworkConnect onmatch="exclude">
+        <!-- Exclude common high-volume browser and update traffic -->
+        <Image condition="is">C:\Program Files\Google\Chrome\Application\chrome.exe</Image>
+        <Image condition="is">C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe</Image>
+        <Image condition="is">C:\Windows\System32\svchost.exe</Image>
+      </NetworkConnect>
+    </RuleGroup>
+
+    <!-- =============================================================
+         Event ID 11: File Create
+         SCOPED to D:\SecureScan\sysmon-test\ only to avoid log flooding.
+         Extend the TargetFilename condition to monitor other directories.
+         ============================================================= -->
+    <RuleGroup name="SecureScan-FileCreate" groupRelation="or">
+      <FileCreate onmatch="include">
+        <TargetFilename condition="begin with">D:\SecureScan\sysmon-test\</TargetFilename>
+      </FileCreate>
+    </RuleGroup>
+
+    <!-- =============================================================
+         Event ID 22: DNS Query
+         Captures DNS name resolution queries from processes.
+         WARNING: DNS logging generates high volume on active systems.
+         Excludes common system DNS queries to reduce noise.
+         ============================================================= -->
+    <RuleGroup name="SecureScan-DnsQuery" groupRelation="or">
+      <DnsQuery onmatch="exclude">
+        <!-- Exclude common Microsoft telemetry and update domains -->
+        <QueryName condition="end with">.microsoft.com</QueryName>
+        <QueryName condition="end with">.windowsupdate.com</QueryName>
+        <QueryName condition="end with">.msftconnecttest.com</QueryName>
+        <QueryName condition="end with">.live.com</QueryName>
+      </DnsQuery>
+    </RuleGroup>
+
+  </EventFiltering>
+
+</Sysmon>

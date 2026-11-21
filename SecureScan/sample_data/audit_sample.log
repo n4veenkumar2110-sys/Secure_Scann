@@ -1,0 +1,8 @@
+type=USER_AUTH msg=audit(1700000000.100:1001): pid=1240 uid=0 auid=4294967295 ses=4294967295 acct="analyst" exe="/usr/sbin/sshd" hostname=192.168.1.50 addr=192.168.1.50 terminal=ssh res=failed
+type=USER_LOGIN msg=audit(1700000002.150:1002): pid=1240 uid=0 auid=4294967295 ses=4294967295 acct="analyst" exe="/usr/sbin/sshd" hostname=192.168.1.50 addr=192.168.1.50 terminal=ssh res=failed
+type=USER_LOGIN msg=audit(1700000010.200:1003): pid=1245 uid=0 auid=1000 ses=1 acct="analyst" exe="/usr/sbin/sshd" hostname=192.168.1.50 addr=192.168.1.50 terminal=ssh res=success
+type=USER_START msg=audit(1700000011.250:1004): pid=1245 uid=0 auid=1000 ses=1 msg='op=PAM:session_open acct="analyst" exe="/usr/sbin/sshd" hostname=192.168.1.50 addr=192.168.1.50 terminal=ssh res=success'
+type=ADD_USER msg=audit(1700000030.300:1005): pid=1310 uid=0 auid=1000 ses=1 acct="labuser" exe="/usr/sbin/useradd" hostname=? addr=? terminal=pts/0 res=success
+type=EXECVE msg=audit(1700000045.400:1006): argc=2 a0="id" a1="-u" comm="id" exe="/usr/bin/id"
+type=SYSCALL msg=audit(1700000045.405:1007): arch=c000003e syscall=59 success=yes exit=0 ppid=1312 pid=1313 auid=1000 uid=0 gid=0 euid=0 comm="id" exe="/usr/bin/id"
+type=PATH msg=audit(1700000045.408:1008): item=0 name="/usr/bin/id" inode=135432 dev=08:01 mode=0100755 ouid=0 ogid=0

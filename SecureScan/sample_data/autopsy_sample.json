@@ -1,0 +1,38 @@
+{
+  "case_name": "INVESTIGATION-CAINE-2026",
+  "case_number": "SEC-8821",
+  "examiner": "Forensic Analyst",
+  "tool": "Autopsy 4.21.0 on CAINE Linux",
+  "artifacts": [
+    {
+      "name": "mimikatz.exe",
+      "path": "C:\\Users\\labuser\\AppData\\Local\\Temp\\mimikatz.exe",
+      "size": 1358848,
+      "modified": "2026-11-20 12:05:00",
+      "md5": "a4d31e9c2049e0c51084227d8858d4a9",
+      "type": "Executable",
+      "user": "labuser",
+      "comment": "Staged executable located in AppData Temp directory"
+    },
+    {
+      "name": "places.sqlite",
+      "path": "/home/labuser/.mozilla/firefox/places.sqlite",
+      "size": 1048576,
+      "modified": "2026-11-20 12:15:30",
+      "md5": "25d55ad283aa400af464c76d713c07ad",
+      "type": "Firefox Web History",
+      "user": "labuser",
+      "comment": "Firefox browser places database containing web history"
+    },
+    {
+      "name": "confidential_financials.xlsx",
+      "path": "/home/labuser/Documents/$Recycle.Bin/confidential_financials.xlsx",
+      "size": 49152,
+      "modified": "2026-11-20 12:20:00",
+      "md5": "7b8b965ad4bca0e41ab51de7b31363a1",
+      "type": "Spreadsheet",
+      "user": "labuser",
+      "comment": "Deleted financial spreadsheet recovered from recycle bin"
+    }
+  ]
+}
