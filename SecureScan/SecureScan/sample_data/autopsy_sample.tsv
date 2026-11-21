@@ -1,0 +1,5 @@
+File Name	File Path	File Type	Size	Modified Time	MD5 Hash	User	Comment
+wallet.dat	/home/labuser/.bitcoin/wallet.dat	Data File	65536	2026-11-20 11:15:00	8f14e45fceea167a5a36dedd4bea2543	labuser	Sensitive cryptocurrency wallet file
+chrome_cookies	/home/labuser/.config/google-chrome/Default/Cookies	SQLite	184320	2026-11-20 11:18:22	3b81109033328e100e00bc14f6b21698	labuser	Chrome browser cookie store
+USB Mass Storage Device	TSK_DEVICE_ATTACHED	Peripheral	0	2026-11-20 11:25:00		labuser	SanDisk Cruzer Glide USB Device connected
+shadow.bak	/var/backups/shadow.bak	Backup	2048	2026-11-20 11:30:00	c2b87ff9e49195e206abfb5de146b7e6	root	Password shadow backup file observed in backup directory

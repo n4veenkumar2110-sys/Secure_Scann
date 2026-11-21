@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050F2A">
+  <meta name="description" content="SecureScan — System Auditing & Digital Forensic Investigation Platform">
+  <title>SecureScan — Forensic Command Centre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <!-- ================================================================
+         SIGNATURE SIDEBAR NAVIGATION
+         ================================================================ -->
+    <aside class="sidebar" id="sidebar">
+      <div class="brand-section">
+        <a class="brand" href="#overview" id="brand-link" aria-label="SecureScan Home">
+          <div class="brand-emblem">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.5 20 5.7v5.8c0 5.2-3.3 8.4-8 10-4.7-1.6-8-4.8-8-10V5.7L12 2.5Z"/>
+              <path d="m8.7 12.2 2.1 2.1 4.7-4.8"/>
+            </svg>
+          </div>
+          <div class="brand-titles">
+            <strong>SecureScan</strong>
+            <small>Security Intelligence</small>
+          </div>
+        </a>
+      </div>
+
+      <nav class="nav-scroll" aria-label="Forensic Command Navigation">
+        <!-- GROUP 1: OVERVIEW -->
+        <div class="nav-group">
+          <div class="nav-group-title">OVERVIEW</div>
+          <ul class="nav-list">
+            <li>
+              <button class="nav-link active" data-page="overview">
+                <span class="nav-icon">◫</span>
+                <span>Command Overview</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- GROUP 2: SYSTEM INTELLIGENCE -->
+        <div class="nav-group">
+          <div class="nav-group-title">SYSTEM INTELLIGENCE</div>
+          <ul class="nav-list">
+            <li>
+              <button class="nav-link" data-page="audit">
+                <span class="nav-icon">⛨</span>
+                <span>System Audit Console</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-link" data-page="system">
+                <span class="nav-icon">⌘</span>
+                <span>Windows Audit</span>
+                <span class="nav-badge" id="nav-system-count">0</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-link" data-page="process">
+                <span class="nav-icon">▣</span>
+                <span>Process Intelligence</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-link" data-page="network">
+                <span class="nav-icon">⌁</span>
+                <span>Network Intelligence</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- GROUP 3: DIGITAL INVESTIGATION -->
+        <div class="nav-group">
+          <div class="nav-group-title">DIGITAL INVESTIGATION</div>
+          <ul class="nav-list">
+            <li>
+              <button class="nav-link" data-page="detections">
+                <span class="nav-icon">⚑</span>
+                <span>Threat Detections</span>
+                <span class="nav-badge nav-badge-alert" id="nav-detections-count">0</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-link" data-page="forensic">
+                <span class="nav-icon">◈</span>
+                <span>Evidence Explorer</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-link" data-page="timeline">
+                <span class="nav-icon">◷</span>
+                <span>Investigation Timeline</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-link" data-page="graph">
+                <span class="nav-icon">☊</span>
+                <span>Relationship Graph</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-link" data-page="reports">
+                <span class="nav-icon">▤</span>
+                <span>Investigation Studio</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- GROUP 4: APPLICATION -->
+        <div class="nav-group">
+          <div class="nav-group-title">APPLICATION</div>
+          <ul class="nav-list">
+            <li>
+              <button class="nav-link" data-page="settings">
+                <span class="nav-icon">⚙</span>
+                <span>Settings & Health</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="sidebar-status-card">
+          <div class="sidebar-status-header">
+            <span>Evidence Ingest Engines</span>
+            <span class="live-pulse"></span>
+          </div>
+          <div class="tool-chip-list">
+            <div class="tool-chip-row">
+              <span class="tool-pill-icon tool-pill-win">W</span>
+              <span>Windows 11 Security</span>
+              <span class="tool-state-tag">Active</span>
+            </div>
+            <div class="tool-chip-row">
+              <span class="tool-pill-icon tool-pill-sys">S</span>
+              <span>Microsoft Sysmon</span>
+              <span class="tool-state-tag">Active</span>
+            </div>
+            <div class="tool-chip-row">
+              <span class="tool-pill-icon tool-pill-wire">T</span>
+              <span>TShark / Wireshark</span>
+              <span class="tool-state-tag" id="sidebar-tshark-status">Ready</span>
+            </div>
+            <div class="tool-chip-row">
+              <span class="tool-pill-icon tool-pill-aut">A</span>
+              <span>Autopsy Findings</span>
+              <span class="tool-state-tag">Import</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="user-profile-row">
+          <div class="user-avatar">SS</div>
+          <div class="user-meta">
+            <strong>Forensic Analyst</strong>
+            <small>Local Workstation</small>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ================================================================
+         MAIN STAGE & COMMAND WORKSPACE
+         ================================================================ -->
+    <main class="main-area" id="main-area">
+      <!-- TOP SCROLL PROGRESS BAR -->
+      <div class="scroll-progress-container" id="scroll-progress-container" aria-hidden="true">
+        <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+      </div>
+
+      <!-- TOPBAR -->
+      <header class="topbar" id="topbar">
+        <div class="topbar-left">
+          <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+          <div class="breadcrumb-trail">
+            <span>SecureScan</span>
+            <span class="crumb-separator">/</span>
+            <strong id="breadcrumb-current">Command Overview</strong>
+          </div>
+        </div>
+
+        <div class="topbar-center">
+          <button class="command-search-trigger" id="command-search-trigger" title="Global Command Search (Ctrl + K)" aria-label="Global Command Search">
+            <span class="search-trigger-icon">⌕</span>
+            <span class="search-trigger-text">Search commands, IPs, users, events...</span>
+            <kbd class="search-kbd">Ctrl K</kbd>
+          </button>
+        </div>
+
+        <div class="topbar-right">
+          <div class="status-indicator-pill">
+            <span class="live-pulse"></span>
+            <span id="backend-status-text">FLASK + SQLITE ACTIVE</span>
+          </div>
+          <button class="icon-button notification-trigger-btn" id="notification-trigger" aria-label="Notifications" title="Notification Centre">
+            <span style="font-size: 15px;">🔔</span>
+            <span class="notification-badge" id="notification-badge" style="display:none;">0</span>
+          </button>
+          <button class="icon-button" id="help-button" title="System Architecture & About" aria-label="About SecureScan">?</button>
+        </div>
+      </header>
+
+      <!-- CONTENT STAGE -->
+      <section class="content-wrap">
+        <!-- Dynamic Page Heading Block -->
+        <div class="page-header-block reveal-on-scroll">
+          <div>
+            <div class="page-eyebrow" id="page-eyebrow">COMMAND CENTRE</div>
+            <h1 id="page-title">Command Overview</h1>
+            <p id="page-description">Unified security auditing, network telemetry, and forensic investigation analytics.</p>
+          </div>
+          <div class="header-action-group">
+            <button class="button button-secondary" id="export-button"><span>↓</span> Export Evidence CSV</button>
+            <button class="button button-sky" id="primary-action"><span>＋</span> Generate Demo Events</button>
+          </div>
+        </div>
+
+        <!-- Demonstration Notice Banner -->
+        <div class="demo-banner" id="demo-banner">
+          <div class="demo-banner-icon">ℹ</div>
+          <div class="demo-banner-text">
+            <strong>Prototype & Evaluation Environment</strong>
+            <span>Synthetic events are marked with a DEMO tag. Real forensic records are preserved independently in SQLite.</span>
+          </div>
+          <div class="demo-banner-actions">
+            <button class="button button-secondary button-small" id="clear-demo-banner-btn" style="display:none;" title="Purge synthetic demo records">Clear Demo Data</button>
+            <button class="icon-button" id="dismiss-banner" aria-label="Dismiss banner" style="width:28px;height:28px;">✕</button>
+          </div>
+        </div>
+
+        <!-- DYNAMIC PAGE BODY -->
+        <div id="page-content" aria-live="polite"></div>
+      </section>
+
+      <!-- Ambient Glows -->
+      <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+      <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+
+      <!-- Floating Back to Top Button -->
+      <button class="back-to-top-btn" id="back-to-top" aria-label="Scroll back to top" title="Back to top">↑</button>
+    </main>
+  </div>
+
+  <!-- Notification Drawer & Backdrop -->
+  <div class="notification-drawer-backdrop" id="notification-backdrop"></div>
+  <aside class="notification-drawer" id="notification-drawer" aria-label="Forensic Notification Centre" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="drawer-title-group">
+        <span class="drawer-icon">🔔</span>
+        <div>
+          <h3>Notification Centre</h3>
+          <small style="color:var(--text-muted);font-size:11px;">Genuine application events & ingest log</small>
+        </div>
+      </div>
+      <button class="icon-button" id="close-notification-drawer" aria-label="Close notification drawer">✕</button>
+    </div>
+    <div class="drawer-actions-bar">
+      <button class="button button-ghost button-small" id="mark-notifications-read">Mark as Read</button>
+      <button class="button button-ghost button-small" id="clear-notifications">Clear All</button>
+    </div>
+    <div class="notification-list" id="notification-list" role="list"></div>
+  </aside>
+
+  <!-- Global Command Search (Ctrl+K) Palette Root -->
+  <div id="command-palette-root"></div>
+
+  <!-- Interactive Modal Container -->
+  <div id="modal-root"></div>
+
+  <!-- Global Toast Feedback -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Hidden File Input for Evidence Imports -->
+  <input type="file" id="file-input" hidden>
+
+  <!-- Frontend Architecture Controller -->
+  <script src="app.js"></script>
+</body>
+</html>

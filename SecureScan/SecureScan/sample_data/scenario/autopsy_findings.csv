@@ -1,0 +1,6 @@
+"File Name","File Path","File Type","Size","Modified Time","Comment","User"
+"m.exe","C:\Users\j.mercer\AppData\Local\Temp\m.exe","PE32+ Executable","1250304","2026-11-18 02:46:00","Deleted file recovered from $MFT. Hash matches a public Mimikatz build.","j.mercer"
+"svc_update.exe","C:\Users\j.mercer\AppData\Local\Temp\svc_update.exe","PE32+ Executable","73802","2026-11-18 02:21:00","Unsigned executable in user temp directory.","j.mercer"
+"lsass.dmp","C:\Windows\Temp\lsass.dmp","Minidump","48211968","2026-11-18 02:47:00","Deleted process memory dump recovered from unallocated space.","j.mercer"
+"id_rsa","C:\Users\j.mercer\.ssh\id_rsa","Private Key","2602","2026-11-18 02:32:00","OpenSSH private key; last accessed during incident window.","j.mercer"
+"History","C:\Users\j.mercer\AppData\Local\Google\Chrome\User Data\Default\History","SQLite","327680","2026-11-17 16:00:00","Browser history database.","j.mercer"
